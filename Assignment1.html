@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment1</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+    }
+
+    .section {
+        border: 2px solid black;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+
+    .top {
+        background-color: #b90c09e3;
+        height: 140px;
+    }
+
+    .middle {
+        display: flex;
+        height: 180px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .middle div {
+        flex: 1;
+        border: 2px solid black;
+    }
+
+    .middle .left { background-color: #109bd7; }
+    .middle .center { background-color: #cb51b5; }
+    .middle .right { background-color:#1bb30ac6 ; }
+
+    .spacer {
+        flex: 1; /* takes up remaining space */
+        background-color: white; /* blank space */
+    }
+
+    .footer {
+        background-color: #9767ea;
+        height: 100px;
+        display: flex;            /* make it a flex container */
+        justify-content: center;  /* horizontal centering */
+        align-items: center;      /* vertical centering */
+        color:aliceblue;
+        font-size: 24px;
+}
+    
+</style>
+</head>
+<body>
+    <div class="section top">Top Section</div>
+
+    <div class="middle">
+        <div class="left">Left</div>
+        <div class="center">Center</div>
+        <div class="right">Right</div>
+    </div>
+
+    <div class="spacer"></div> <!-- flexible blank space -->
+
+    <div class="footer">Bottom Section</div>
+</body>
+</html>
